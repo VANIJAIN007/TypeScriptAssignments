@@ -1,0 +1,10 @@
+var userInput1 = prompt("Enter ur name");
+var h1 = document.createElement("h1");
+h1.innerHTML = userInput1;
+document.write("My name is: " + userInput1);
+document.body.style.textAlign = "center";
+document.body.style.color = "white";
+document.body.style.textShadow = "2px 2px 2px deeppink";
+document.body.style.fontSize = "30px";
+console.log(userInput);
+console.log(h1);
