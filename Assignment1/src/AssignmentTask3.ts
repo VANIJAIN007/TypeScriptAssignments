@@ -1,18 +1,33 @@
-let sum1=0;
-let number2=prompt(`Enter a number`);
+// let number2=prompt(`Enter a number`);
 
-let a:number=parseInt(number2);
-var arr2[];
-arr2.push(number2);
+// let a:number=parseInt(number2);
+// var arr2[];
+// arr2.push(number2);
 
 
 function varargs1(...args:number[]){
+    let sum1=0;
+
     for(let i=0;i<args.length;i++){
         sum1+=args[i];
     }
-    console.log(sum1);
+    return sum1;
 }
 // varargs1(1,2,3);
 
-document.write("My sum"+sum1);
+let value:any=prompt("Enter length of arguments");
+let value1=parseInt(value);
+let y:number[]=[];
+for(let i=0;i<value1;i++){
+    let mynumber:any=prompt("Enter number");
+    let num=parseInt(mynumber);
+    y.push(num);
+}
+document.body.style.textAlign="center";
+document.body.style.color="white";
+document.body.style.fontSize="24px";
+
+document.write("My sum is: "+varargs1(...y));
+
+
 
